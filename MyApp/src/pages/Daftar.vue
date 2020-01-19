@@ -23,7 +23,12 @@
             <q-item-section
             v-if="task.done"
             side>
-          x
+          <q-btn 
+          flat 
+          dense
+          round 
+          color="primary" 
+          icon="delete" />
         </q-item-section>
       </q-item>
     </q-list>
