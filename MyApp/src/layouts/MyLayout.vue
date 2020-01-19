@@ -65,7 +65,7 @@
             <q-avatar size="56px" class="q-mb-sm">
               <img src="https://cdn.quasar.dev/img/boy-avatar.png">
             </q-avatar>
-            <div class="text-weight-bold">MasNadh</div>
+            <div class="text-weight-bold">Muhammad Anas Nadhifuz Zuhdi</div>
             <div>neotsuki77</div>
           </div>
         </q-img>
