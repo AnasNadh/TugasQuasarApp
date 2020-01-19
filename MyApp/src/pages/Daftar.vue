@@ -5,7 +5,7 @@
     separator
     bordered>
       <q-item 
-      v-for="task in tasks"
+      v-for="(task, index) in tasks"
       :key="task.title"
       @click="task.done = !task.done" 
       :class="{ 'done bg-blue-1' : task.done }"
@@ -24,6 +24,7 @@
             v-if="task.done"
             side>
           <q-btn 
+          @click.stop="deleteTask(index)"
           flat 
           dense
           round 
@@ -51,11 +52,15 @@ export default {
         {
           title: 'Load pict',
           done: false
-        },
+        }
       ]
     }
+  },
+  methods: {
+    deleteTask(index) {
+      this.tasks.splice(index, 1)
+    }
   }
-
 }
 </script>
 
